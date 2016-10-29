@@ -9,12 +9,12 @@ require 'doorflow/reservation'
 # Third Party
 # None
 
-module Doorflow
+module DoorFlow
   @base_url = "https://admin.doorflow.com"
 
   class << self
     attr_accessor :api_key
-    # Doorflow.api_key = "YOUR_API_KEY"
+    # DoorFlow.api_key = "YOUR_API_KEY"
   end
 
   def self.get_request(url_extension, params = {})
@@ -28,7 +28,7 @@ module Doorflow
   end
 
   def self.request_url(url_extension, params = {})
-    params = params.merge({ api_key: Doorflow.api_key }).to_query
+    params = params.merge({ api_key: DoorFlow.api_key }).to_query
     @base_url + url_extension + '?' + params
   end
 end

@@ -1,13 +1,13 @@
-module Doorflow
+module DoorFlow
   class Person
     def self.list_all
-      Doorflow.get_request('/api/2/people.json')
+      DoorFlow.get_request('/api/2/people.json')
     end
 
     def self.list_all_since(date_time)
       parsed_date = date_time.to_time.iso8601
 
-      Doorflow.get_request(
+      DoorFlow.get_request(
         '/api/2/people.json',
         {
           since: parsed_date
