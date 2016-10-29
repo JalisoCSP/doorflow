@@ -3,7 +3,7 @@ require "doorflow/version"
 
 # Internal
 # TODO: Classes for each call, eg:
-# require 'doorflow/person'
+require 'doorflow/person'
 require 'doorflow/reservation'
 
 # Third Party
