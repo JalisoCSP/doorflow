@@ -7,7 +7,7 @@ require 'doorflow/person'
 require 'doorflow/reservation'
 
 # Third Party
-require 'httparty'
+# None
 
 module Doorflow
   @base_url = "https://admin.doorflow.com"
@@ -20,6 +20,11 @@ module Doorflow
   def self.get_request(url_extension, params = {})
     url = request_url(url_extension, params)
     HTTParty.get(url).parsed_response
+  end
+
+  def self.post_request(url_extension, params = {})
+    url = request_url(url_extension, params)
+    HTTParty.post(url, params)
   end
 
   def self.request_url(url_extension, params = {})
