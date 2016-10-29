@@ -2,7 +2,6 @@
 require "doorflow/version"
 
 # Internal
-# TODO: Classes for each call, eg:
 require 'doorflow/group'
 require 'doorflow/person'
 require 'doorflow/reservation'
@@ -15,10 +14,10 @@ module Doorflow
 
   class << self
     attr_accessor :api_key
-    # Doorflow.api_key = [YourKey]
+    # Doorflow.api_key = "YOUR_API_KEY"
   end
 
-  def self.request(url_extension, params = {})
+  def self.get_request(url_extension, params = {})
     url = request_url(url_extension, params)
     HTTParty.get(url).parsed_response
   end
