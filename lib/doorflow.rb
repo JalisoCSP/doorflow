@@ -24,7 +24,7 @@ module Doorflow
 
   def self.post_request(url_extension, params = {})
     url = request_url(url_extension, params)
-    HTTParty.post(url, params)
+    HTTParty.post(url, params).parsed_response
   end
 
   def self.request_url(url_extension, params = {})
