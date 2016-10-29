@@ -4,7 +4,7 @@ require "doorflow/version"
 # Internal
 # TODO: Classes for each call, eg:
 # require 'doorflow/person'
-# require 'doorflow/reservation'
+require 'doorflow/reservation'
 
 # Third Party
 require 'httparty'

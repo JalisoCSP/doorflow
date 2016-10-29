@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["craig@calajo.co.uk"]
 
   spec.summary       = 'Ruby actions for Doorflow API'
-  spec.description   = 'A test gem to use the Doorflow API, detailed at https://developer.doorflow.com/'
+  spec.description   = 'A gem to use the Doorflow API, detailed at https://developer.doorflow.com/'
   spec.homepage      = 'https://developer.doorflow.com/'
   spec.license       = "MIT"
 
