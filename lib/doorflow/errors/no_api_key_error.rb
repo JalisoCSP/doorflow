@@ -1,4 +1,4 @@
 module DoorFlow
-  class NoApiKeyError < StripeError
+  class NoApiKeyError < DoorFlowError
   end
 end
