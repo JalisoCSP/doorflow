@@ -28,6 +28,7 @@ module DoorFlow
   end
 
   def self.request_url(url_extension, params = {})
+    raise NoApiKeyError if DoorFlow.api_key.nil?
     params = params.merge({ api_key: DoorFlow.api_key }).to_query
     @base_url + url_extension + '?' + params
   end
