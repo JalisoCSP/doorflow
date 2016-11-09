@@ -1,4 +1,4 @@
 module DoorFlow
-  class NoApiKeyError < DoorFlowError
+  class NoApiKeyError < StandardError
   end
 end

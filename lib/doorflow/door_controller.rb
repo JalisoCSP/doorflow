@@ -5,12 +5,7 @@ module DoorFlow
     end
 
     def self.with_id(id)
-      DoorFlow.get_request(
-        '/api/2/people.json',
-        {
-          id: id
-        }
-      )
+      DoorFlow.get_request('/api/2/door_controller/#{id}.json')
     end
   end
 end
