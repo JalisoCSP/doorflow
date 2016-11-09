@@ -4,7 +4,7 @@ module DoorFlow
       DoorFlow.get_request('/api/2/events')
     end
 
-    def self.last_all_with_filter(filter_params)
+    def self.list_all_with_filter(filter_params)
       DoorFlow.get_request(
         '/api/2/events',
         filter_params
