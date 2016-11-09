@@ -2,6 +2,8 @@
 require "doorflow/version"
 
 # Internal
+require 'doorflow/account'
+require 'doorflow/door_controller'
 require 'doorflow/group'
 require 'doorflow/person'
 require 'doorflow/reservation'
